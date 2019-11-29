@@ -6,6 +6,7 @@ from . import views
 
 router = DefaultRouter()
 router.register('hello-viewset',views.HelloViewSet,base_name='hello-viewset')
+router.register('login-profile',views.LoginViewSet,base_name='login-profile')
 router.register('user-profile-viewset',views.UserProfileViewSet)
 #NO NEED TO GIVE BASE NAMES FOR REGTERING MODEL VIEWSETS
 urlpatterns = [
